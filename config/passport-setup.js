@@ -8,9 +8,12 @@ passport.use(
         clientID: keys.google.clientID,
         clientSecret: keys.google.clientSecret
     },
-    () => {
+    (accessToken, refreshToken, profile, done) => {
 
+        console.log('hello moto terus!');
+        // console.log(profile);
     }
 )
 );
 
+ 
